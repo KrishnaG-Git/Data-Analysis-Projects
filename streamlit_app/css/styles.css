@@ -1,0 +1,135 @@
+/* styles.css */
+/* debug: make body border bright red */
+div[data-testid="stMetric"] {
+    background-color: #c8c9ca; /* Light gray background */
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+div[data-testid="stPlotlyChart"] {
+    background-color: #c8c9ca; /* Light gray background */
+    border-radius: 10px;
+    padding: 2px 20px 2px 2px;
+    margin-bottom: 10px;
+    margin-left  :10px;
+}
+div[data-testid="stDataFrame"] {
+    background-color: #c8c9ca; /* Light gray background */
+    border-radius: 10px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 10px;
+}
+div[data-testid="stTableStyledTable"] {
+    background-color: #c8c9ca; /* Light gray background */
+    border-radius: 10px;
+    padding: 2px 2px 2px 2px;
+    margin-bottom: 10px;
+}
+div[data-testid="stVegaLiteChart"] {
+    background-color: #c8c9ca; /* Light gray background */
+    border-radius: 10px;
+    padding: 5px 5px 5px 2px;
+    margin-bottom: 10px;
+}
+div[data-testid="mapboxgl-map"] {
+    background-color: #c8c9ca; /* Light gray background */
+    border-radius: 10px;
+    padding: 5px 5px 3px 3px;
+    margin-bottom: 10px;
+}
+/* Force rounded corners on tables */
+.rounded-table {
+    border-collapse: separate !important; /* Force separate borders */
+    border-spacing: 0 !important; /* Force no spacing */
+    border-radius: 10px !important; /* Force rounded corners */
+    overflow: hidden !important; /* Force overflow hidden */
+    border: 1px solid #ddd !important; /* Force border around the table */
+}
+
+.rounded-table th,
+.rounded-table td {
+    border: 1px solid #ddd !important; /* Force borders on cells */
+    padding: 8px !important;
+    text-align: left !important;
+}
+
+/* These rules apply border-radius to the specific corners of the table */
+/* Using !important here too, as these are critical for the visual effect */
+.rounded-table tr:first-child th:first-child,
+.rounded-table tr:first-child td:first-child {
+    border-top-left-radius: 10px !important;
+}
+
+.rounded-table tr:first-child th:last-child,
+.rounded-table tr:first-child td:last-child {
+    border-top-right-radius: 10px !important;
+}
+
+.rounded-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px !important;
+}
+
+.rounded-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px !important;
+}
+
+/* Other CSS rules you had */
+.nav-link {
+  font-size: 18px !important;
+}
+
+div.streamlit-option-menu > .nav-link-selected {
+  font-size: 18px !important;
+}
+
+/* If that doesn’t work, inspect in dev-tools and adjust */
+/* For example, some setups nest links under a <ul> */
+ul.streamlit-option-menu li a.nav-link {
+  font-size: 18px !important;
+}
+/* New CSS for Selectbox Font Size */
+/* Targets the label of the selectbox */
+.stSelectbox label {
+    font-size: 18px !important; /* Adjust this value as needed */
+    font-weight: bold; /* Optional: make the label bold */
+}
+
+/* Targets the displayed value inside the selectbox when an option is chosen */
+.stSelectbox div[data-baseweb="select"] div[role="button"] {
+    font-size: 16px !important; /* Adjust this value as needed */
+}
+
+/* Targets the options in the dropdown list */
+.stSelectbox div[data-baseweb="popover"] ul li {
+    font-size: 16px !important; /* Adjust this value as needed */
+}
+.metric-row { 
+  display: flex; 
+  gap: 1rem; 
+  margin-bottom: 1rem; 
+}
+
+.metric-box {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #4e79a7;
+  border-radius: 8px;
+  background-color: #f2f8ff;
+  text-align: center;
+}
+
+.chart-box {
+  padding: 1rem;
+  border: 2px solid #e15759;
+  border-radius: 8px;
+  background-color: #fff2f2;
+  margin-bottom: 1rem;
+}
+body { outline: 5px dashed magenta !important; }
+
+/* debug: .metric-box should look neon green */
+.metric-box {
+  background-color: #0f0 !important;
+  padding: 1rem;
+  border: 3px solid #000 !important;
+}
